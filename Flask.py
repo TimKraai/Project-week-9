@@ -19,6 +19,8 @@ def connect_db():
     """Connects to the specific database."""
     return sqlite3.connect(app.config['DATABASE'])
 
+# add stuff
+
 @app.route('/')
 def hello_world():
     g.db = connect_db()
